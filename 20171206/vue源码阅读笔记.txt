@@ -1,0 +1,12 @@
+4508行---------initProxy(vm);
+
+3269行---------initData(vm);对传入参数data进行处理
+
+
+
+3360行----------proxy(vm, "_data", key)
+
+  // observe data  监听data,这个data是在这里定义的自由变量,true表示是顶层数据
+3364行------observe(data, true /* asRootData */);
+
+891行------Observer.prototype.walk(data)//用来双向绑定数据

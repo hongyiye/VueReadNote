@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="vue.js" ></script>
+	</head>
+	<body>
+		<div id="app">
+			{{message}}
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#app',
+			data:{
+				message: 'Hello Vue!'
+			}
+		});
+		var value1 = "test01";
+		var value2 = "test03";
+		function foo(value1){
+			console.log(value1);
+			console.log(value2);
+		}
+		foo("test02");
+	</script>
+</html>
